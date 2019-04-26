@@ -1,34 +1,24 @@
-\documentclass[12pt,twoside]{report}
-\usepackage[utf8]{inputenc}
-\usepackage{graphicx}
-\usepackage{multirow}
-\usepackage{titling}
-\usepackage{booktabs}
-\usepackage{float}
-\graphicspath{{figures/}}
-
+\input{preamble.tex}
 \input{config.tex}
 \input{layout.tex}
-
+\input{glossary.tex}
 
 \begin{document}
 
+\pagenumbering{roman}
+
 \input{title-page.tex}
 
-%% \input{abstract.tex}
+\input{preface/_main.tex}
 
-%% \input{acknowledgment.tex}
+\pagenumbering{arabic}
 
+\input{chapters/_main.tex}
 
-\tableofcontents
+\clearpage
 
+\pagenumbering{Roman}
 
-%% \input{chapters/motivation.tex}
-
-\chapter{Research Design}
-\input{chapters/research-design.tex}
-
-
-%% \input{appendix.tex}
+\input{appendix/_main.tex}
 
 \end{document}
